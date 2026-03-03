@@ -1,49 +1,35 @@
-# 📘 Customer Churn Prediction Project
+# Business Understanding
 
-## 📊 Overview
-This project uses **machine learning models** to predict **customer churn** — identifying customers likely to leave a telecom service.  
-The goal is to help companies develop **data-driven retention strategies**.
+## Problem Statement
+Customer churn leads to revenue loss and increased customer acquisition costs.
+The company currently lacks a proactive, data-driven system to identify
+customers at high risk of leaving.
 
----
+## Project Objective
+Build a binary classification model to predict whether a customer will churn.
 
-## 🧠 Objectives
-- Understand key factors influencing churn.  
-- Build and evaluate classification models.  
-- Provide actionable insights for business improvement.  
+Target Variable:
+    churn = 1 → Customer leaves
+    churn = 0 → Customer stays
 
----
+## Business Goals
+- Predict churn with high accuracy.
+- Identify key factors influencing churn behavior.
+- Enable targeted retention strategies.
+- Reduce churn rate and improve customer lifetime value.
 
-## 🧹 Data Preparation
-- Cleaned and encoded categorical variables.  
-- Handled missing values.  
-- Split data into training (80%) and testing (20%) sets.  
-- Scaled numeric features where necessary.  
+## Key Stakeholders
+- Marketing Team → Design retention campaigns
+- Customer Service Team → Engage high-risk customers
+- Management → Strategic decision-making
+- Data Team → Monitor and optimize model performance
 
----
+## Success Metrics
+- High Recall for churn class (minimize missed at-risk customers)
+- Strong overall model performance (F1-score / ROC-AUC)
+- Actionable insights that reduce churn and protect revenue
 
-## 🤖 Machine Learning Models
-- **Decision Tree Classifier:** Tuned using GridSearchCV.  
-  - Accuracy: ~97%  
-- **Logistic Regression:** Used as baseline.  
-  - Accuracy: ~86%  
-
----
-
-## 🔍 Key Insights
-- High day-minute usage and frequent customer service calls increase churn risk.  
-- Customers with international plans churn more often.  
-- Decision Tree captured complex behavior patterns better than Logistic Regression.
-
----
-
-## 🚀 Recommendations
-- Focus retention on high-usage, high-call customers.  
-- Improve service quality and plan flexibility.  
-- Use advanced resampling (SMOTE) to balance future datasets.  
-
----
-
-## 🧾 Files in This Repository
+##  Files in This Repository
 - `phase3_project.ipynb` – Main notebook with full analysis.  
 - `churn_data.csv` – Dataset used for modeling.  
 - `README.md` – Project documentation.  
@@ -51,6 +37,6 @@ The goal is to help companies develop **data-driven retention strategies**.
 
 ---
 
-## 👩‍💻 Author
+##  Author
 **Prepared by:** Cindy Akinyi  
 **Date:** October 2025
